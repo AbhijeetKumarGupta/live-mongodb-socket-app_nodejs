@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="searchDate.js"></script>
+    <link rel="stylesheet" href="searchDate.css" />
+    <title>Date Range</title>
+  </head>
+  <body>
+    <div class="input">
+      <label for="start">Start date:</label>
+      <input
+        type="date"
+        id="start"
+        name="start-date"
+        min="2021-01-01"
+        max="2021-12-31"
+      />
+      <label for="end">End date:</label>
+      <input
+        type="date"
+        id="end"
+        name="end-date"
+        min="2021-01-01"
+        max="2021-12-31"
+      />
+      <br />
+      <button id="submit">Get Data</button>
+    </div>
+    <div id="table-wrapper">
+      <div id="table-headers">
+        <table>
+          <thead>
+            <tr>
+              <th class="column1">Id</th>
+              <th class="column2">Temperature</th>
+              <th class="column3">Battery Level</th>
+              <th class="column4">Timestamp</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div id="table-data">
+        <table>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

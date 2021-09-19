@@ -1,0 +1,118 @@
+body {
+  background-color: black;
+}
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 300px;
+  margin: auto;
+  margin-top: 2%;
+  padding: 10px;
+  border: 2px solid blue;
+}
+label {
+  margin-bottom: 5px;
+}
+input {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+button {
+  margin: 10px;
+  font-size: 15px;
+  padding: 5px;
+  font-weight: 600;
+  border: 1px solid green;
+  background-color: white;
+  color: green;
+  cursor: pointer;
+}
+button:hover {
+  border: 1px solid red;
+  background-color: black;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: red;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid red;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+#table-wrapper {
+  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+#table-headers {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+#table-data {
+  max-height: 600px;
+  overflow-y: overlay;
+}
+
+@-moz-document url-prefix() {
+  #table-data {
+    overflow-y: scroll;
+  }
+}
+
+#table-data tr {
+  cursor: pointer;
+}
+
+#table-data tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+th {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+  background-color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+th:first-child {
+  padding-right: 40px;
+}
+
+td {
+  font-size: 16px;
+  color: #808080;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.column1 {
+  width: 170px;
+}
+
+.column2 {
+  width: 70px;
+}
+
+.column3 {
+  width: 70px;
+}
+.column4 {
+  width: 70px;
+}
+a:hover {
+  background-color: darkgreen;
+  color: white;
+  border: 1px solid lightgreen;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Add Entries</title>
+  </head>
+  <body>
+    <div class="main">
+      <form class="inputForm" action="#">
+        <label for="temp">Temperature -</label>
+        <input type="text" name="temp" id="temp" />
+        <label for="battery">Battery Level -</label>
+        <input type="text" name="temp" id="battery" />
+        <label for="time">Date -</label>
+        <input
+          type="date"
+          id="time"
+          name="start-date"
+          min="2021-01-01"
+          max="2021-12-31"
+        />
+        <button id="addButton">Add</button>
+        <a href="liveData.html" target="_blank">OPEN LIVE DATA</a>
+        <a href="searchDate.html" target="_blank">OPEN DATE SEARCH</a>
+      </form>
+    </div>
+  </body>
+</html>
