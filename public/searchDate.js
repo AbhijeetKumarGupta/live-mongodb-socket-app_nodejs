@@ -26,7 +26,7 @@ $(document).ready(function () {
   function createTableRow(keys, data) {
     for (var i = data.length - 1; i >= 0; i--) {
       var tableRow = document.createElement("tr");
-      for (var j = 0; j < keys.length - 1; j++) {
+      for (var j = 0; j < 4; j++) {
         var tableData = document.createElement("td");
         tableData.className = "column" + (j + 1);
         tableData.innerHTML = data[i][keys[j]];
